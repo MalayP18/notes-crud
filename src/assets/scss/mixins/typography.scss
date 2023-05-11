@@ -1,0 +1,63 @@
+/* Text sm/Regular */
+@mixin text-sm() {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* Text sm/Semibold */
+  @mixin text-sm-semibold() {
+    @include text-sm();
+    font-weight: 600;
+  }
+  
+  /* Text md/Regular */
+  @mixin text-md() {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  /* Text md/Medium */
+  @mixin text-md-medium() {
+    @include text-md();
+    font-weight: 500;
+  }
+  
+  
+  /* Text lg/Regular */
+  @mixin text-lg() {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  /* Text lg/Semibold */
+  @mixin text-lg-semibold() {
+    @include text-lg();
+    font-weight: 600;
+  }
+  
+  /* Text lg/Bold */
+  @mixin text-lg-bold() {
+    @include text-lg();
+    font-weight: 700;
+  }
+  
+  /* Display xs/Medium */
+  @mixin display-xs-medium() {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  /* Text xl/Medium */
+  @mixin text-xl-medium {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  /* Display xs/Bold */
+  @mixin display-xs-bold() {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }

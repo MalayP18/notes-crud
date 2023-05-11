@@ -1,0 +1,35 @@
+@use '../../../assets/scss/mixins' as mixins;
+
+.MuiDialog-container {
+    .MuiPaper-root {
+        .MuiTypography-root {
+            
+            &.dialog-title {
+                @include mixins.text-lg-semibold();
+                color: var(--black);
+            }
+        }
+        
+        .action-buttons-container {
+            .cancel-button {
+                background-color: var(--gray-25);
+                color: var(--black);
+                margin-right: 10px;
+                @include mixins.text-md();
+                &:focus {
+                    background-color: var(--gray-25);
+                    color: var(--black);
+                }
+                &:hover {
+                    background-color: var(--gray-25);
+                    color: var(--black);
+                }
+            }
+            .delete-button {
+                background-color: red;
+                color: var(--white);
+                @include mixins.text-md();
+            }
+        }
+    }
+}

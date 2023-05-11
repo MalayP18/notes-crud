@@ -1,0 +1,51 @@
+@use '../../../assets/scss/mixins' as mixins;
+
+
+.add-note-container {
+    .add-note-button {
+        @include mixins.text-lg-semibold();
+        color: var(--white);
+        cursor: pointer;
+    }
+}
+
+.MuiDialog-container {
+    .MuiPaper-root {
+        .MuiTypography-root {
+            
+            &.dialog-title {
+                @include mixins.text-lg-semibold();
+                color: var(--black);
+            }
+        }
+
+        .form-body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .action-buttons-container {
+            margin-right: 15px;
+            .cancel-button {
+                background-color: var(--gray-25);
+                color: var(--black);
+                margin-right: 10px;
+                @include mixins.text-md();
+                cursor: pointer;
+                &:focus {
+                    background-color: var(--gray-25);
+                    color: var(--black);
+                }
+                &:hover {
+                    background-color: var(--gray-25);
+                    color: var(--black);
+                }
+            }
+            .add-button {
+                cursor: pointer;
+                @include mixins.text-md();
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+
+
+.notes-container {
+    padding: 40px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .table-container {
+        margin-top: 20px;
+        overflow: hidden;
+        overflow-x: auto;
+        .content {
+            max-width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .MuiSvgIcon-root {
+            &.delete-icon {
+                color: var(--error);
+            }
+        }
+        .MuiTableBody-root {
+            .MuiTableRow-root {
+                cursor: pointer;
+            }
+        }
+        .actions-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
+
+.MuiDialog-root {
+    .MuiDialog-container {
+        .MuiPaper-root {
+            width: 600px;
+        }
+    }
+}

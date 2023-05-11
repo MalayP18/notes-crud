@@ -1,0 +1,29 @@
+@use '../../../assets/scss/mixins' as mixins;
+
+.MuiDialog-container {
+    .MuiPaper-root {
+        .MuiTypography-root {
+            
+            &.dialog-title {
+                @include mixins.text-lg-semibold();
+                color: var(--black);
+            }
+        }
+
+        .notes-data-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            label {
+                width: 80px;
+                display: inline-block;
+            }
+            .content {
+                display: flex;
+                label {
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
